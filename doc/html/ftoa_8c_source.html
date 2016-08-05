@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Proyecto_FFT: Fichero Fuente src/ftoa.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Proyecto_FFT
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ftoa.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ftoa_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*ftoa.c*/</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;ftoa.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="ftoa_8c.html#abc4794c4737fc47a1025cb4649791dcb">   11</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="ftoa_8c.html#abc4794c4737fc47a1025cb4649791dcb">pow</a>(<span class="keywordtype">int</span> ten , <span class="keywordtype">int</span> aft)</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <span class="keywordtype">int</span> h=1,res=1;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   <span class="keywordflow">for</span> (h=1;h&lt;(aft+1); h++)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      res = res * ten;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   }</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="ftoa_8c.html#aad7fea725cb4b198ace1aa3df5051244">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ftoa_8c.html#aad7fea725cb4b198ace1aa3df5051244">reverse</a>(<span class="keywordtype">char</span> *str, <span class="keywordtype">int</span> len)</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   <span class="keywordtype">int</span> i=0, j=len-1, temp;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   <span class="keywordflow">while</span> (i&lt;j)</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        temp = str[i];</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        str[i] = str[j];</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        str[j] = temp;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        i++; j--;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="ftoa_8c.html#a631933fa325410873e33addc6c4bb24a">   39</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="ftoa_8c.html#a631933fa325410873e33addc6c4bb24a">intToStr</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">char</span> str[], <span class="keywordtype">int</span> d)</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   <span class="keywordtype">int</span> i = 0;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   <span class="keywordflow">while</span> (x)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;   {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      str[i++] = (x%10) + <span class="charliteral">&#39;0&#39;</span>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      x = x/10;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;   }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   <span class="comment">/* </span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   If number of digits required is more, then</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   add 0s at the beginning </span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   */</span> </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   <span class="keywordflow">while</span> (i &lt; d)</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;   {   </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      str[i++] = <span class="charliteral">&#39;0&#39;</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="ftoa_8c.html#aad7fea725cb4b198ace1aa3df5051244">reverse</a>(str, i);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        str[i] = <span class="charliteral">&#39;\0&#39;</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">return</span> i;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;   }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">Converts a floating point number to string. This is the main function.</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="ftoa_8c.html#a9d788c52b2a8d06e236faedd98111baa">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ftoa_8c.html#a9d788c52b2a8d06e236faedd98111baa">ftoa</a>(<span class="keywordtype">float</span> n, <span class="keywordtype">char</span> *res, <span class="keywordtype">int</span> afterpoint)</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <span class="comment">/*</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">   Extract integer part</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">   */</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   <span class="keywordtype">int</span> ipart = n/1;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">float</span> fipart = ipart;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   </div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   <span class="comment">/*</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">   Extract floating part</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">   */</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;   <span class="keywordtype">float</span> fpart = n - fipart;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   <span class="comment">/*</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">   convert integer part to string</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">   */</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;   <span class="keywordtype">int</span> i = <a class="code" href="ftoa_8c.html#a631933fa325410873e33addc6c4bb24a">intToStr</a>(ipart, res, 0);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;   <span class="comment">/*</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">   check for display option after point</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">   */</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   <span class="keywordflow">if</span> (afterpoint != 0)</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;   {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="comment">/*</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">      add dot</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">      Get the value of fraction part upto given no. of points after dot. The third parameter is needed</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">      to handle cases like 233.007</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">      */</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      res[i] = <span class="charliteral">&#39;.&#39;</span>;  </div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      fpart = fpart * <a class="code" href="ftoa_8c.html#abc4794c4737fc47a1025cb4649791dcb">pow</a>(10, afterpoint);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="ftoa_8c.html#a631933fa325410873e33addc6c4bb24a">intToStr</a>((<span class="keywordtype">int</span>)fpart, res + i + 1, afterpoint);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;   }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div><div class="ttc" id="ftoa_8c_html_aad7fea725cb4b198ace1aa3df5051244"><div class="ttname"><a href="ftoa_8c.html#aad7fea725cb4b198ace1aa3df5051244">reverse</a></div><div class="ttdeci">void reverse(char *str, int len)</div><div class="ttdef"><b>Definition:</b> <a href="ftoa_8c_source.html#l00020">ftoa.c:20</a></div></div>
+<div class="ttc" id="ftoa_8c_html_a631933fa325410873e33addc6c4bb24a"><div class="ttname"><a href="ftoa_8c.html#a631933fa325410873e33addc6c4bb24a">intToStr</a></div><div class="ttdeci">int intToStr(int x, char str[], int d)</div><div class="ttdoc">intToStr function - Integer to String Converts a given integer x to string str[]. d is the number of ...</div><div class="ttdef"><b>Definition:</b> <a href="ftoa_8c_source.html#l00039">ftoa.c:39</a></div></div>
+<div class="ttc" id="ftoa_8c_html_a9d788c52b2a8d06e236faedd98111baa"><div class="ttname"><a href="ftoa_8c.html#a9d788c52b2a8d06e236faedd98111baa">ftoa</a></div><div class="ttdeci">void ftoa(float n, char *res, int afterpoint)</div><div class="ttdef"><b>Definition:</b> <a href="ftoa_8c_source.html#l00063">ftoa.c:63</a></div></div>
+<div class="ttc" id="ftoa_8c_html_abc4794c4737fc47a1025cb4649791dcb"><div class="ttname"><a href="ftoa_8c.html#abc4794c4737fc47a1025cb4649791dcb">pow</a></div><div class="ttdeci">int pow(int ten, int aft)</div><div class="ttdoc">ftoa (float to ascii) coded by: Jayasantosh Samal. You can find the complete article here: http://www...</div><div class="ttdef"><b>Definition:</b> <a href="ftoa_8c_source.html#l00011">ftoa.c:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

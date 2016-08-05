@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Proyecto_FFT: source file</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Proyecto_FFT
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">'defines'</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">source file<div class="ingroups"><a class="el" href="group___proyecto___f_f_t.html">Proyecto_FFT</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboración para source file:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group___main.png" border="0" alt="" usemap="#group______main"/>
+<!-- MAP 0 -->
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcomplex.html">complex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complex number structure.  <a href="structcomplex.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr class="memitem:gaeb7ac177f98359103932539c10abf8c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#gaeb7ac177f98359103932539c10abf8c8">MAXPOW</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:gaeb7ac177f98359103932539c10abf8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ga87b37e951d1fd3e2ebe6a98c0ea50330"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#ga87b37e951d1fd3e2ebe6a98c0ea50330">radix2</a> (struct <a class="el" href="structcomplex.html">complex</a> *<a class="el" href="group___main.html#ga50a386ea2d430e81f1bd2cbcb70eafcb">x_signal</a>, int N)</td></tr>
+<tr class="memdesc:ga87b37e951d1fd3e2ebe6a98c0ea50330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function of FFT algorithm.  <a href="#ga87b37e951d1fd3e2ebe6a98c0ea50330">Más...</a><br /></td></tr>
+<tr class="separator:ga87b37e951d1fd3e2ebe6a98c0ea50330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5dcf3013b0c8382efd1ff2d3ec28dda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#gac5dcf3013b0c8382efd1ff2d3ec28dda">bit_reverse_reorder</a> (struct <a class="el" href="structcomplex.html">complex</a> *vector, int N)</td></tr>
+<tr class="memdesc:gac5dcf3013b0c8382efd1ff2d3ec28dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">output results reorder function.  <a href="#gac5dcf3013b0c8382efd1ff2d3ec28dda">Más...</a><br /></td></tr>
+<tr class="separator:gac5dcf3013b0c8382efd1ff2d3ec28dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51af30a60f9f02777c6396b8247e356f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#ga51af30a60f9f02777c6396b8247e356f">main</a> ()</td></tr>
+<tr class="memdesc:ga51af30a60f9f02777c6396b8247e356f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <a href="#ga51af30a60f9f02777c6396b8247e356f">Más...</a><br /></td></tr>
+<tr class="separator:ga51af30a60f9f02777c6396b8247e356f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga6b24d5cc84eef41dbe90b79e93de030f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#ga6b24d5cc84eef41dbe90b79e93de030f">complex::r</a></td></tr>
+<tr class="separator:ga6b24d5cc84eef41dbe90b79e93de030f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5eefa12b02189d694af536bc7d8726be"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#ga5eefa12b02189d694af536bc7d8726be">complex::i</a></td></tr>
+<tr class="separator:ga5eefa12b02189d694af536bc7d8726be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50a386ea2d430e81f1bd2cbcb70eafcb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcomplex.html">complex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#ga50a386ea2d430e81f1bd2cbcb70eafcb">x_signal</a> [SAMPLES]</td></tr>
+<tr class="memdesc:ga50a386ea2d430e81f1bd2cbcb70eafcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input signal structure.  <a href="#ga50a386ea2d430e81f1bd2cbcb70eafcb">Más...</a><br /></td></tr>
+<tr class="separator:ga50a386ea2d430e81f1bd2cbcb70eafcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6e1b2e2df50cea4a448b3e1af0ef67c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#gae6e1b2e2df50cea4a448b3e1af0ef67c">pow_2</a> [<a class="el" href="group___main.html#gaeb7ac177f98359103932539c10abf8c8">MAXPOW</a>]</td></tr>
+<tr class="separator:gae6e1b2e2df50cea4a448b3e1af0ef67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab66ed8e0098c0a86b458672a55a9cca9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#gab66ed8e0098c0a86b458672a55a9cca9">k</a></td></tr>
+<tr class="separator:gab66ed8e0098c0a86b458672a55a9cca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57d44982ba52ca6e9a95be4998e5a646"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___main.html#ga57d44982ba52ca6e9a95be4998e5a646">k2</a> =0</td></tr>
+<tr class="separator:ga57d44982ba52ca6e9a95be4998e5a646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a class="anchor" id="gaeb7ac177f98359103932539c10abf8c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXPOW&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00051">51</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="gac5dcf3013b0c8382efd1ff2d3ec28dda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bit_reverse_reorder </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>N</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>output results reorder function. </p>
+<p>FFT RADIX-2 DIF algorithm gives results in mixed order. It's mandatory reorder output values in order to get the real FFT. This process in known as 'bit reversal'. </p>
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00114">114</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga51af30a60f9f02777c6396b8247e356f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main function. </p>
+<p>This is the main entry point of the software.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>0</dd></dl>
+<dl class="section remark"><dt>Comentarios</dt><dd>This function never returns. Return value is only to avoid compiler warnings or errors. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00157">157</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga87b37e951d1fd3e2ebe6a98c0ea50330"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void radix2 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>x_signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>N</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main function of FFT algorithm. </p>
+<p>butterfly and bit reverse reorder functions coded by: Michael J. Andrews You can find the complete article here: <a href="http://www.gweep.net/~rocko/FFT/paper.html">http://www.gweep.net/~rocko/FFT/paper.html</a> radix2 function implements FFT DIF (decimation in frequency) fundamental butterfly. As showed below.</p>
+<p>x(1)&mdash;-/-&mdash; x(1) + x(4) X x(4)&mdash;/--&mdash; (x(1) - x(4)) * WN -1 WN</p>
+<p>where WN stands for "Twiddle Factors". These are solved using the Euler formula. That's why we need to calculate sines and cosines (MySin and MyCos formulas) </p>
+<p>Do 2 Point DFT </p>
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00076">76</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a class="anchor" id="ga5eefa12b02189d694af536bc7d8726be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float complex::i</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00041">41</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab66ed8e0098c0a86b458672a55a9cca9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int k</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00055">55</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga57d44982ba52ca6e9a95be4998e5a646"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int k2 =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00056">56</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae6e1b2e2df50cea4a448b3e1af0ef67c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pow_2[<a class="el" href="group___main.html#gaeb7ac177f98359103932539c10abf8c8">MAXPOW</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00054">54</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6b24d5cc84eef41dbe90b79e93de030f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float complex::r</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00040">40</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga50a386ea2d430e81f1bd2cbcb70eafcb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcomplex.html">complex</a> x_signal[SAMPLES]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Input signal structure. </p>
+<p>x_signal structure is complex type. SAMPLES is defined at input_signal.h file and stores signal's lenght. </p>
+
+<p>Definición en la línea <a class="el" href="main_8c_source.html#l00049">49</a> del archivo <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

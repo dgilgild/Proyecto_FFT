@@ -1,0 +1,162 @@
+\hypertarget{group___main}{}\section{source file}
+\label{group___main}\index{source file@{source file}}
+Diagrama de colaboración para source file\+:
+% FIG 0
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcomplex}{complex}
+\begin{DoxyCompactList}\small\item\em Complex number structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\textquotesingle{}defines\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___main_gaeb7ac177f98359103932539c10abf8c8}{M\+A\+X\+P\+OW}~24
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___main_ga87b37e951d1fd3e2ebe6a98c0ea50330}{radix2} (struct \hyperlink{structcomplex}{complex} $\ast$\hyperlink{group___main_ga50a386ea2d430e81f1bd2cbcb70eafcb}{x\+\_\+signal}, int N)
+\begin{DoxyCompactList}\small\item\em Main function of F\+FT algorithm. \end{DoxyCompactList}\item 
+void \hyperlink{group___main_gac5dcf3013b0c8382efd1ff2d3ec28dda}{bit\+\_\+reverse\+\_\+reorder} (struct \hyperlink{structcomplex}{complex} $\ast$vector, int N)
+\begin{DoxyCompactList}\small\item\em output results reorder function. \end{DoxyCompactList}\item 
+\hyperlink{group___main_ga51af30a60f9f02777c6396b8247e356f}{main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{group___main_ga6b24d5cc84eef41dbe90b79e93de030f}{complex\+::r}
+\item 
+float \hyperlink{group___main_ga5eefa12b02189d694af536bc7d8726be}{complex\+::i}
+\item 
+struct \hyperlink{structcomplex}{complex} \hyperlink{group___main_ga50a386ea2d430e81f1bd2cbcb70eafcb}{x\+\_\+signal} \mbox{[}S\+A\+M\+P\+L\+ES\mbox{]}
+\begin{DoxyCompactList}\small\item\em Input signal structure. \end{DoxyCompactList}\item 
+int \hyperlink{group___main_gae6e1b2e2df50cea4a448b3e1af0ef67c}{pow\+\_\+2} \mbox{[}\hyperlink{group___main_gaeb7ac177f98359103932539c10abf8c8}{M\+A\+X\+P\+OW}\mbox{]}
+\item 
+int \hyperlink{group___main_gab66ed8e0098c0a86b458672a55a9cca9}{k}
+\item 
+int \hyperlink{group___main_ga57d44982ba52ca6e9a95be4998e5a646}{k2} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+\subsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\index{source file@{source file}!M\+A\+X\+P\+OW@{M\+A\+X\+P\+OW}}
+\index{M\+A\+X\+P\+OW@{M\+A\+X\+P\+OW}!source file@{source file}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+P\+OW}{MAXPOW}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+P\+OW~24}\hypertarget{group___main_gaeb7ac177f98359103932539c10abf8c8}{}\label{group___main_gaeb7ac177f98359103932539c10abf8c8}
+
+
+Definición en la línea 51 del archivo main.\+c.
+
+
+
+\subsection{Documentación de las funciones}
+\index{source file@{source file}!bit\+\_\+reverse\+\_\+reorder@{bit\+\_\+reverse\+\_\+reorder}}
+\index{bit\+\_\+reverse\+\_\+reorder@{bit\+\_\+reverse\+\_\+reorder}!source file@{source file}}
+\subsubsection[{\texorpdfstring{bit\+\_\+reverse\+\_\+reorder(struct complex $\ast$vector, int N)}{bit_reverse_reorder(struct complex *vector, int N)}}]{\setlength{\rightskip}{0pt plus 5cm}void bit\+\_\+reverse\+\_\+reorder (
+\begin{DoxyParamCaption}
+\item[{struct {\bf complex} $\ast$}]{vector, }
+\item[{int}]{N}
+\end{DoxyParamCaption}
+)}\hypertarget{group___main_gac5dcf3013b0c8382efd1ff2d3ec28dda}{}\label{group___main_gac5dcf3013b0c8382efd1ff2d3ec28dda}
+
+
+output results reorder function. 
+
+F\+FT R\+A\+D\+I\+X-\/2 D\+IF algorithm gives results in mixed order. It\textquotesingle{}s mandatory reorder output values in order to get the real F\+FT. This process in known as \textquotesingle{}bit reversal\textquotesingle{}. 
+
+Definición en la línea 114 del archivo main.\+c.
+
+\index{source file@{source file}!main@{main}}
+\index{main@{main}!source file@{source file}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___main_ga51af30a60f9f02777c6396b8247e356f}{}\label{group___main_ga51af30a60f9f02777c6396b8247e356f}
+
+
+Main function. 
+
+This is the main entry point of the software.
+
+\begin{DoxyReturn}{Devuelve}
+0
+\end{DoxyReturn}
+\begin{DoxyRemark}{Comentarios}
+This function never returns. Return value is only to avoid compiler warnings or errors. 
+\end{DoxyRemark}
+
+
+Definición en la línea 157 del archivo main.\+c.
+
+\index{source file@{source file}!radix2@{radix2}}
+\index{radix2@{radix2}!source file@{source file}}
+\subsubsection[{\texorpdfstring{radix2(struct complex $\ast$x\+\_\+signal, int N)}{radix2(struct complex *x_signal, int N)}}]{\setlength{\rightskip}{0pt plus 5cm}void radix2 (
+\begin{DoxyParamCaption}
+\item[{struct {\bf complex} $\ast$}]{x\+\_\+signal, }
+\item[{int}]{N}
+\end{DoxyParamCaption}
+)}\hypertarget{group___main_ga87b37e951d1fd3e2ebe6a98c0ea50330}{}\label{group___main_ga87b37e951d1fd3e2ebe6a98c0ea50330}
+
+
+Main function of F\+FT algorithm. 
+
+butterfly and bit reverse reorder functions coded by\+: Michael J. Andrews You can find the complete article here\+: \href{http://www.gweep.net/~rocko/FFT/paper.html}{\tt http\+://www.\+gweep.\+net/$\sim$rocko/\+F\+F\+T/paper.\+html} radix2 function implements F\+FT D\+IF (decimation in frequency) fundamental butterfly. As showed below.
+
+x(1)----\//-\/--- x(1) + x(4) X x(4)---/-\/-\/--- (x(1) -\/ x(4)) $\ast$ WN -\/1 WN
+
+where WN stands for \char`\"{}\+Twiddle Factors\char`\"{}. These are solved using the Euler formula. That\textquotesingle{}s why we need to calculate sines and cosines (My\+Sin and My\+Cos formulas) Do 2 Point D\+FT 
+
+Definición en la línea 76 del archivo main.\+c.
+
+
+
+\subsection{Documentación de las variables}
+\index{source file@{source file}!i@{i}}
+\index{i@{i}!source file@{source file}}
+\subsubsection[{\texorpdfstring{i}{i}}]{\setlength{\rightskip}{0pt plus 5cm}float complex\+::i}\hypertarget{group___main_ga5eefa12b02189d694af536bc7d8726be}{}\label{group___main_ga5eefa12b02189d694af536bc7d8726be}
+
+
+Definición en la línea 41 del archivo main.\+c.
+
+\index{source file@{source file}!k@{k}}
+\index{k@{k}!source file@{source file}}
+\subsubsection[{\texorpdfstring{k}{k}}]{\setlength{\rightskip}{0pt plus 5cm}int k}\hypertarget{group___main_gab66ed8e0098c0a86b458672a55a9cca9}{}\label{group___main_gab66ed8e0098c0a86b458672a55a9cca9}
+
+
+Definición en la línea 55 del archivo main.\+c.
+
+\index{source file@{source file}!k2@{k2}}
+\index{k2@{k2}!source file@{source file}}
+\subsubsection[{\texorpdfstring{k2}{k2}}]{\setlength{\rightskip}{0pt plus 5cm}int k2 =0}\hypertarget{group___main_ga57d44982ba52ca6e9a95be4998e5a646}{}\label{group___main_ga57d44982ba52ca6e9a95be4998e5a646}
+
+
+Definición en la línea 56 del archivo main.\+c.
+
+\index{source file@{source file}!pow\+\_\+2@{pow\+\_\+2}}
+\index{pow\+\_\+2@{pow\+\_\+2}!source file@{source file}}
+\subsubsection[{\texorpdfstring{pow\+\_\+2}{pow_2}}]{\setlength{\rightskip}{0pt plus 5cm}int pow\+\_\+2\mbox{[}{\bf M\+A\+X\+P\+OW}\mbox{]}}\hypertarget{group___main_gae6e1b2e2df50cea4a448b3e1af0ef67c}{}\label{group___main_gae6e1b2e2df50cea4a448b3e1af0ef67c}
+
+
+Definición en la línea 54 del archivo main.\+c.
+
+\index{source file@{source file}!r@{r}}
+\index{r@{r}!source file@{source file}}
+\subsubsection[{\texorpdfstring{r}{r}}]{\setlength{\rightskip}{0pt plus 5cm}float complex\+::r}\hypertarget{group___main_ga6b24d5cc84eef41dbe90b79e93de030f}{}\label{group___main_ga6b24d5cc84eef41dbe90b79e93de030f}
+
+
+Definición en la línea 40 del archivo main.\+c.
+
+\index{source file@{source file}!x\+\_\+signal@{x\+\_\+signal}}
+\index{x\+\_\+signal@{x\+\_\+signal}!source file@{source file}}
+\subsubsection[{\texorpdfstring{x\+\_\+signal}{x_signal}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf complex} x\+\_\+signal\mbox{[}S\+A\+M\+P\+L\+ES\mbox{]}}\hypertarget{group___main_ga50a386ea2d430e81f1bd2cbcb70eafcb}{}\label{group___main_ga50a386ea2d430e81f1bd2cbcb70eafcb}
+
+
+Input signal structure. 
+
+x\+\_\+signal structure is complex type. S\+A\+M\+P\+L\+ES is defined at input\+\_\+signal.\+h file and stores signal\textquotesingle{}s lenght. 
+
+Definición en la línea 49 del archivo main.\+c.
+

@@ -1,0 +1,77 @@
+\hypertarget{ftoa_8c}{}\section{Referencia del Archivo src/ftoa.c}
+\label{ftoa_8c}\index{src/ftoa.\+c@{src/ftoa.\+c}}
+{\ttfamily \#include \char`\"{}ftoa.\+h\char`\"{}}\\*
+Dependencia gráfica adjunta para ftoa.\+c\+:
+% FIG 0
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ftoa_8c_abc4794c4737fc47a1025cb4649791dcb}{pow} (int ten, int aft)
+\begin{DoxyCompactList}\small\item\em ftoa (float to ascii) coded by\+: Jayasantosh Samal. You can find the complete article here\+: \href{http://www.geeksforgeeks.org/convert-floating-point-number-string/}{\tt http\+://www.\+geeksforgeeks.\+org/convert-\/floating-\/point-\/number-\/string/} Has the name said this function converts float values to characters in order to be suitable to be interpreted by s\+A\+PI so it can manipulate and present them through terminal \end{DoxyCompactList}\item 
+void \hyperlink{ftoa_8c_aad7fea725cb4b198ace1aa3df5051244}{reverse} (char $\ast$str, int len)
+\item 
+int \hyperlink{ftoa_8c_a631933fa325410873e33addc6c4bb24a}{int\+To\+Str} (int x, char str\mbox{[}$\,$\mbox{]}, int d)
+\begin{DoxyCompactList}\small\item\em int\+To\+Str function -\/ Integer to String Converts a given integer x to string str\mbox{[}\mbox{]}. d is the number of digits required in output. If d is more than the number of digits in x, then 0s are added at the beginning. \end{DoxyCompactList}\item 
+void \hyperlink{ftoa_8c_a9d788c52b2a8d06e236faedd98111baa}{ftoa} (float n, char $\ast$res, int afterpoint)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\index{ftoa.\+c@{ftoa.\+c}!ftoa@{ftoa}}
+\index{ftoa@{ftoa}!ftoa.\+c@{ftoa.\+c}}
+\subsubsection[{\texorpdfstring{ftoa(float n, char $\ast$res, int afterpoint)}{ftoa(float n, char *res, int afterpoint)}}]{\setlength{\rightskip}{0pt plus 5cm}void ftoa (
+\begin{DoxyParamCaption}
+\item[{float}]{n, }
+\item[{char $\ast$}]{res, }
+\item[{int}]{afterpoint}
+\end{DoxyParamCaption}
+)}\hypertarget{ftoa_8c_a9d788c52b2a8d06e236faedd98111baa}{}\label{ftoa_8c_a9d788c52b2a8d06e236faedd98111baa}
+
+
+Definición en la línea 63 del archivo ftoa.\+c.
+
+\index{ftoa.\+c@{ftoa.\+c}!int\+To\+Str@{int\+To\+Str}}
+\index{int\+To\+Str@{int\+To\+Str}!ftoa.\+c@{ftoa.\+c}}
+\subsubsection[{\texorpdfstring{int\+To\+Str(int x, char str[], int d)}{intToStr(int x, char str[], int d)}}]{\setlength{\rightskip}{0pt plus 5cm}int int\+To\+Str (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{char}]{str\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{ftoa_8c_a631933fa325410873e33addc6c4bb24a}{}\label{ftoa_8c_a631933fa325410873e33addc6c4bb24a}
+
+
+int\+To\+Str function -\/ Integer to String Converts a given integer x to string str\mbox{[}\mbox{]}. d is the number of digits required in output. If d is more than the number of digits in x, then 0s are added at the beginning. 
+
+
+
+Definición en la línea 39 del archivo ftoa.\+c.
+
+\index{ftoa.\+c@{ftoa.\+c}!pow@{pow}}
+\index{pow@{pow}!ftoa.\+c@{ftoa.\+c}}
+\subsubsection[{\texorpdfstring{pow(int ten, int aft)}{pow(int ten, int aft)}}]{\setlength{\rightskip}{0pt plus 5cm}int pow (
+\begin{DoxyParamCaption}
+\item[{int}]{ten, }
+\item[{int}]{aft}
+\end{DoxyParamCaption}
+)}\hypertarget{ftoa_8c_abc4794c4737fc47a1025cb4649791dcb}{}\label{ftoa_8c_abc4794c4737fc47a1025cb4649791dcb}
+
+
+ftoa (float to ascii) coded by\+: Jayasantosh Samal. You can find the complete article here\+: \href{http://www.geeksforgeeks.org/convert-floating-point-number-string/}{\tt http\+://www.\+geeksforgeeks.\+org/convert-\/floating-\/point-\/number-\/string/} Has the name said this function converts float values to characters in order to be suitable to be interpreted by s\+A\+PI so it can manipulate and present them through terminal 
+
+
+
+Definición en la línea 11 del archivo ftoa.\+c.
+
+\index{ftoa.\+c@{ftoa.\+c}!reverse@{reverse}}
+\index{reverse@{reverse}!ftoa.\+c@{ftoa.\+c}}
+\subsubsection[{\texorpdfstring{reverse(char $\ast$str, int len)}{reverse(char *str, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}void reverse (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{ftoa_8c_aad7fea725cb4b198ace1aa3df5051244}{}\label{ftoa_8c_aad7fea725cb4b198ace1aa3df5051244}
+
+
+Definición en la línea 20 del archivo ftoa.\+c.
+
